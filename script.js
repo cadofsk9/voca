@@ -80,7 +80,7 @@ fileInput.addEventListener('change', async (event) => {
     formData.append('image', file); // 'image'는 server.js에서 multer가 기대하는 필드 이름입니다.
 
     try {
-        const response = await fetch('http://localhost:3000/upload-image', {
+        const response = await fetch('https://engvoca.onrender.com/upload-image', {
             method: 'POST',
             body: formData,
         });
