@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의 단어장</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>나만의 단어장</h1>
+        <p>카메라로 찍은 단어 목록을 학습해 보세요!</p>
+
+        <div class="display-area">
+            <div id="word-display" class="word-box">
+                <span id="eng-word-text"></span>
+                <button id="speak-btn" class="speak-button" style="display:none;">🔊</button>
+            </div>
+            <div id="translation-display" class="translation-box"></div>
+        </div>
+
+        <div class="button-group">
+            <button id="eng-btn">랜덤 영어 단어</button>
+            <button id="kor-btn">랜덤 한글 뜻</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
